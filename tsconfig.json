@@ -1,0 +1,19 @@
+// 27 August 2023
+// https://github.com/tsconfig/bases/blob/main/bases/node-lts.json
+{
+	"display": "Node LTS",
+	"_version": "18.1.0",
+	"compilerOptions": {
+		"lib": ["es2023"],
+		"module": "node16",
+		"target": "es2022",
+		"strict": true,
+		"esModuleInterop": true,
+		"skipLibCheck": true,
+		"forceConsistentCasingInFileNames": true,
+		"moduleResolution": "node16",
+		"noUncheckedIndexedAccess": true,
+		"outDir": "dist"
+	},
+	"include": ["src"]
+}
