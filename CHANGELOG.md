@@ -1,5 +1,11 @@
 # create-t400-app
 
+## 0.0.4
+
+### Patch Changes
+
+- 36f032b: Dependencies will now be added with the ^ symbol prefix
+
 ## 0.0.3
 
 ### Patch Changes
