@@ -40,7 +40,7 @@ export const editPackageJSON = async ({ add, remove, cwd }: Args) => {
 			for (const dependency of add.devDependencies) {
 				if (typeof dependency === "string") {
 					const version = (await execute(`pnpm view ${dependency} version`)).stdout.slice(0, -1);
-					fileData.devDependencies[dependency] = version;
+					fileData.devDependencies[dependency] = `^${version}`;
 				} else {
 					fileData.devDependencies[dependency.name] = dependency.version;
 				}
